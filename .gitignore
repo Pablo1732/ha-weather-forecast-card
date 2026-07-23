@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,visualstudiocode
 
+# Project uses pnpm (pnpm-lock.yaml); don't commit an npm-generated lockfile
+package-lock.json
+
 ### macOS ###
 # General
 .DS_Store
