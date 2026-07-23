@@ -115,12 +115,13 @@
   --indicator-width: 20px;
   --wfc-effects-text-shadow: var(
     --weather-forecast-card-effects-text-shadow,
-    0 1px 2px rgba(0, 0, 0, 0.5),
-    0 0 4px rgba(0, 0, 0, 0.35)
+    0 1px 3px rgba(0, 0, 0, 0.85),
+    0 0 8px rgba(0, 0, 0, 0.65)
   );
   --wfc-effects-text-shadow-secondary: var(
     --weather-forecast-card-effects-text-shadow-secondary,
-    0 1px 2px rgba(0, 0, 0, 0.55)
+    0 1px 3px rgba(0, 0, 0, 0.85),
+    0 0 6px rgba(0, 0, 0, 0.6)
   );
 }
 
@@ -247,17 +248,17 @@ ha-card {
   white-space: nowrap;
 }
 
-wfc-animation-provider.dark[has-clouds] ~ .wfc-container .wfc-current-state,
-wfc-animation-provider.dark[has-clouds] ~ .wfc-container .wfc-current-temperature {
+wfc-animation-provider[has-clouds] ~ .wfc-container .wfc-current-state,
+wfc-animation-provider[has-clouds] ~ .wfc-container .wfc-current-temperature {
   text-shadow: var(--wfc-effects-text-shadow);
 }
 
-wfc-animation-provider.dark[has-clouds] ~ .wfc-container .wfc-name,
-wfc-animation-provider.dark[has-clouds] ~ .wfc-container .wfc-current-secondary-value {
+wfc-animation-provider[has-clouds] ~ .wfc-container .wfc-name,
+wfc-animation-provider[has-clouds] ~ .wfc-container .wfc-current-secondary-value {
   text-shadow: var(--wfc-effects-text-shadow-secondary);
 }
 
-wfc-animation-provider.dark[has-clouds] ~ .wfc-container .wfc-current-secondary-icon {
+wfc-animation-provider[has-clouds] ~ .wfc-container .wfc-current-secondary-icon {
   filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.5));
 }
 

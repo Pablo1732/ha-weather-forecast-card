@@ -501,6 +501,7 @@
   z-index: 0;
   animation: cloud-drift var(--cloud-drift-duration, 80s) linear infinite;
   will-change: transform;
+  filter: brightness(0.6);
 }
 
 /* Wind blowing toward the east drifts the deck rightward (the track is two
